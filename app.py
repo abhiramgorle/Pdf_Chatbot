@@ -23,7 +23,7 @@ def main():
     st.set_page_config(page_title="PdfKnows",page_icon="📚",layout="wide")
     st.title(":blue[PdfKnows]")
     st.markdown("A chatbot that can answer questions about your pdf files.")
-    st.markdown("Open up the sidebar and start your learning.")
+    st.markdown("Open the sidebar and start learning.")
     st.header("💬 Chatbot")
 
     if "conversation" not in st.session_state:

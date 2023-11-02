@@ -34,7 +34,7 @@ def main():
         st.session_state.processComplete = None
     with st.sidebar:
         uploaded_files =  st.file_uploader("Upload your file",type=['pdf','docx'],accept_multiple_files=True)
-        openai_api_key = "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"
+        openai_api_key = st.secrets["openapi_key"]
         process = st.button("Process")
     if process:
         if not openai_api_key:

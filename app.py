@@ -23,6 +23,7 @@ def main():
     st.set_page_config(page_title="PdfKnows",page_icon="📚",layout="wide")
     st.title(":blue[PdfKnows]")
     st.markdown("A chatbot that can answer questions about your pdf files.")
+    st.markdown("Open up the sidebar and start your learning.")
     st.header("💬 Chatbot")
 
     if "conversation" not in st.session_state:
@@ -33,7 +34,7 @@ def main():
         st.session_state.processComplete = None
     with st.sidebar:
         uploaded_files =  st.file_uploader("Upload your file",type=['pdf','docx'],accept_multiple_files=True)
-        openai_api_key = "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"
+        openai_api_key = "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"
         process = st.button("Process")
     if process:
         if not openai_api_key:
